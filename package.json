@@ -1,0 +1,20 @@
+{
+  "name": "Playground of Katey Basye",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines":{
+    "node": "4.4.1",
+    "npm": "2.14.20"
+    },
+  "author": "Katey Basye",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.18",
+    "pug": "^2.0.0-alpha6"
+  }
+}
