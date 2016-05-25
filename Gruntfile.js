@@ -11,7 +11,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-bowercopy');
 
   // ===========================================================================
   // CONFIGURE GRUNT ===========================================================
@@ -68,14 +68,15 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/js/main.min.js': 'src/js/main.js'
+          'dist/main.min.js': 'src/js/main.js'
         }
       }
     },
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'expanded'
+          style: 'expanded',
+          loadPath: 'bower_components/uikit/scss'
         },
         files: {                         // Dictionary of files
           'src/css/main.css': 'src/css/main.scss'        // 'destination': 'source'
@@ -88,12 +89,34 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/css/main.min.css': 'src/css/main.css'
-          // src: ['src/css/main.css']
+          'dist/main.min.css': 'src/css/main.css'
+        }
+      }
+    },
+
+    // When a new bower component is installed,
+    //    1) copy script files (below)
+    //    2) run grunt bower
+    //    3) include new js file in layout.pug
+    //    4) if there are SASS files to import, include load path in sass task and @import them into main.scss
+    bowercopy: {
+      options: {
+        srcPrefix: 'bower_components'
+      },
+      scripts: {
+        options: {
+          destPrefix: 'dist/vendor/js'
+        },
+        files: {
+          'jquery/jquery.min.js': 'jquery/dist/jquery.min.js',
+          'uikit/uikit.min.js': 'uikit/js/uikit.min.js',
+          'uikit/dropdown.min.js': 'uikit/js/core/dropdown.min.js'
         }
       }
     }
 
   });
+
+  grunt.registerTask('bower', ['bowercopy']); 
   grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'watch']); 
 };

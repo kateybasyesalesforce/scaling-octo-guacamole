@@ -16,6 +16,7 @@ var mongoUri = process.env.MONGO_URI ||
 		app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'bower_components')));
 
 // Routes
 var title = "Playground of Katey Basye";
