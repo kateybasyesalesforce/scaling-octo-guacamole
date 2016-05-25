@@ -1,20 +1,39 @@
 {
-  "name": "Playground of Katey Basye",
+  "name": "portfolio",
   "version": "1.0.0",
-  "private": true,
   "description": "",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "engines":{
-    "node": "4.4.1",
-    "npm": "2.14.20"
-    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kateybasye/portfolio.git"
+  },
   "author": "Katey Basye",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kateybasye/portfolio/issues"
+  },
+  "homepage": "https://github.com/kateybasye/portfolio#readme",
+  "engines": {
+    "node": "6.2.0",
+    "npm": "3.8.9"
+  },
   "dependencies": {
+    "autoprefixer": "^6.3.6",
     "express": "^4.13.4",
-    "mongodb": "^2.1.18",
-    "pug": "^2.0.0-alpha6"
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "jshint-stylish": "^2.2.0",
+    "mongodb": "^2.1.19",
+    "node-sass": "^3.7.0",
+    "node-sass-middleware": "^0.9.8",
+    "pug": "^2.0.0-alpha8"
   }
 }

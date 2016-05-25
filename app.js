@@ -1,19 +1,24 @@
 var express = require('express');
 var app = express();
-		app.engine('pug', require('pug').__express);
-		app.set('view engine', 'pug');
 var path = require('path');
-		app.use(express.static(path.join(__dirname, 'public')));
-var mongo = require('mongodb').MongoClient;
 
-var mongoUri = process.env.MONGO_URI ||
-  'mongodb://127.0.0.1:27017/l4d';
-
+// Set local dev
 var port = process.env.PORT || 3000;
     app.listen(port);
 
+// Set database
+var mongo = require('mongodb').MongoClient;
+var mongoUri = process.env.MONGO_URI ||
+  'mongodb://127.0.0.1:27017/l4d';
+
+// Set template engine
+		app.engine('pug', require('pug').__express);
+		app.set('view engine', 'pug');
+
+app.use(express.static(path.join(__dirname, 'dist')));
+
 // Routes
-var title = "Letters Are For Drinking";
+var title = "Playground of Katey Basye";
 app.get('/', function (req, res) {
 	var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
   res.render('index', {

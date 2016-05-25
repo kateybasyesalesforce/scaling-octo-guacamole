@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Katey Basye"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kateybasye/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.26.3",
+    "jquery": "^2.2.4"
+  }
+}
