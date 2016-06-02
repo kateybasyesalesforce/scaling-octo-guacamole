@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
 // Routes
-var title = "Playground of Katey Basye";
+var title = "Setup";
 app.get('/', function (req, res) {
 	var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
   res.render('index', {

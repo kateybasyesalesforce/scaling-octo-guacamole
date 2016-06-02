@@ -68,7 +68,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/main.min.js': 'src/js/main.js'
+          'dist/js/main.min.js': 'src/js/main.js'
         }
       }
     },
@@ -76,10 +76,11 @@ module.exports = function(grunt) {
       dist: {                            // Target
         options: {                       // Target options
           style: 'expanded',
-          loadPath: 'bower_components/uikit/scss'
+          loadPath: ['bower_components/uikit']
         },
         files: {                         // Dictionary of files
-          'src/css/main.css': 'src/css/main.scss'        // 'destination': 'source'
+          'dist/css/main.css': 'scss/**/*.scss',
+          'dist/css/main.css': 'src/css/main.scss'        // 'destination': 'source'
         }
       }
     },
@@ -89,7 +90,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/main.min.css': 'src/css/main.css'
+          'dist/css/main.min.css': 'dist/css/main.css'
         }
       }
     },
