@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "uikit": "^2.26.3",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "salesforce-lightning-design-system": "^1.0.5"
   }
 }

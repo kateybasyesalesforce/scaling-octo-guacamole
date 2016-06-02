@@ -1,11 +1,9 @@
 doctype html
 html
 	head
-		link(rel='stylesheet', href='/main.min.css')
+		link(rel='stylesheet', href='css/main.min.css')
 		title= title
-	body
-		div.wrapper
-			block content
-	script(src='vendor/js/jquery/jquery.min.js')
-	script(src='vendor/js/uikit/uikit.min.js')
-	script(src='/main.min.js')
+	body.slds-p-around--large
+		block content
+	script(src='vendor/jquery/jquery.min.js')
+	script(src='js/main.min.js')

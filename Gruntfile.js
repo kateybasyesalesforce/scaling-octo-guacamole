@@ -12,6 +12,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bowercopy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // ===========================================================================
   // CONFIGURE GRUNT ===========================================================
@@ -49,7 +50,18 @@ module.exports = function(grunt) {
         },
         files: 'src/js/*.js', 
         tasks: ['jshint', 'uglify'] 
-      } 
+      },
+
+      images: {
+        options: {
+          livereload: {
+            host: 'localhost',
+            port: 8888
+          }
+        },
+        files: ['src/img/*.png', 'src/img/*.svg'],
+        tasks: ['imagemin'] 
+      }
     },
 
     // configure jshint to validate js files -----------------------------------
@@ -76,11 +88,11 @@ module.exports = function(grunt) {
       dist: {                            // Target
         options: {                       // Target options
           style: 'expanded',
-          loadPath: ['bower_components/uikit']
+          loadPath: ['bower_components']
         },
-        files: {                         // Dictionary of files
-          'dist/css/main.css': 'scss/**/*.scss',
-          'dist/css/main.css': 'src/css/main.scss'        // 'destination': 'source'
+        files: {                                          // 'destination': 'source'
+          'dist/css/main.css': 'salesforce-lightning-design-stystem/scss/**/*.scss',          //  dist : SLDS
+          'dist/css/main.css': 'src/css/**/*.scss'        //  dist : my custom CSS
         }
       }
     },
@@ -90,9 +102,15 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/css/main.min.css': 'dist/css/main.css'
+          'dist/css/main.min.css': 'dist/css/main.css'  //  my custom minified : my custom compiled CSS
         }
       }
+    },
+
+    imagemin:{
+      'dist/img/cloudlogo.png': 'src/img/cloudlogo.png',
+      'dist/img/cloudlogo_words.svg': 'src/img/cloudlogo_words.svg',
+      'dist/img/search.svg': 'src/img/search.svg'
     },
 
     // When a new bower component is installed,
@@ -106,12 +124,10 @@ module.exports = function(grunt) {
       },
       scripts: {
         options: {
-          destPrefix: 'dist/vendor/js'
+          destPrefix: 'dist/vendor'
         },
         files: {
-          'jquery/jquery.min.js': 'jquery/dist/jquery.min.js',
-          'uikit/uikit.min.js': 'uikit/js/uikit.min.js',
-          'uikit/dropdown.min.js': 'uikit/js/core/dropdown.min.js'
+          'jquery/jquery.min.js': 'jquery/dist/jquery.min.js'
         }
       }
     }
@@ -119,5 +135,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('bower', ['bowercopy']); 
-  grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'watch']); 
+  grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'imagemin', 'watch']); 
 };

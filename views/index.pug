@@ -1,11 +1,10 @@
 extends layout
 
 block content
-	h1 #{title}
-	ul
-		each val, index in letters
-			li
-				if index >= currentLetterIndex
-					a(href='bars/'+val, class='font_huge') #{val}
-				else 
-					a(href='bars/'+val, class='font_huge visited') #{val}
+	div.slds-grid.slds-grid--align-center
+		div.slds-size--6-of-12
+			div.slds-box
+				h1.slds-text-heading--large.slds-m-bottom--large #{title}
+				ul
+					li
+						a(href='/proto') Proto

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	div.GlobalNav
+		div.GlobalNav__global-nav
+			div.slds-grid
+				div.GlobalNav__global-header.slds-col.slds-size--1-of-4
+					div.LogoAnimated.LogoAnimated--clipped.LogoAnimated--animated
+						img(src="img/cloudlogo.png" class="LogoAnimated__logo")
+						img(src="img/cloudlogo_words.svg" class="LogoAnimated__logo-words")
+				div.GlobalNav__search-bar-container
+					div.XObjSearch
+						div.XObjSearch__global-search-bar.slds-col
+							input(id='XObjSearch__search-bar' type='text' class='slds-input' placeholder='Search Salesforce')
+							div.XObjSearch__global-search-icon
+								span
+									include ../dist/img/search.svg
+				div.GlobalNav__global-identity.slds-col.slds-size--1-of-4.slds-text-align--right.slds-p-horizontal--small
