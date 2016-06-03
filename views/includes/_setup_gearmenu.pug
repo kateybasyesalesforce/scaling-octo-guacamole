@@ -1,0 +1,63 @@
+li#SetupGear__menu-item.slds-p-right--small.GlobalNav__global-identity-item
+	span.GlobalNav__dropdown-menu-trigger
+		div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+			button.slds-button.slds-button--bare.GlobalNav__identity-button
+				span.slds-assistive-text Setup
+				span#SetupGear__icon
+					img(src='img/setup.png')
+			span
+		div#SetupDropdown.slds-dropdown.slds-dropdown--right.slds-dropdown--menu.slds-nubbin--top-right
+			div#SetupAppMenu.slds-text-align--left
+				div
+					div.slds-dropdown__header 
+						span
+						span.slds-text-heading--label Setup (#[span(id='setupapp-count') 13])
+
+					ul(role='menu' class='slds-dropdown__list')
+						//- Setup App 1
+						li.slds-dropdown__item
+							a(href='setupapp/01')
+								p.slds-trucate
+									span.slds-icon__container
+										include ../../dist/img/setupmenu_01.svg
+									span.GlobalNav__dropdown-item-label Service Desk Setup
+
+						//- Setup App 2
+						li.slds-dropdown__item
+							a(href='setupapp/01')
+								p.slds-trucate
+									span.slds-icon__container
+										include ../../dist/img/setupmenu_02.svg
+									span.GlobalNav__dropdown-item-label Inside Sales Desk Setup
+
+						//- Setup App 3
+						li.slds-dropdown__item
+							a(href='setupapp/01')
+								p.slds-trucate
+									span.slds-icon__container
+										include ../../dist/img/setupmenu_03.svg
+									span.GlobalNav__dropdown-item-label My Money App Setup
+
+			//- GLOBAL SETUP MENU
+			div#SetupGlobalMenu.slds-text-align--left
+				div
+					div.slds-dropdown__header 
+						span
+						span.slds-text-heading--label Setup (#[span(id='setupapp-count') 13])
+
+					ul(role='menu' class='slds-dropdown__list')
+						//- Setup App 1
+						li.slds-dropdown__item
+							a(href='setupapp/global')
+								p.slds-trucate
+									span.slds-icon__container
+										include ../../dist/img/setupmenu_global.svg
+									span.GlobalNav__dropdown-item-label Global Setup
+
+						//- Setup App 2
+						li.slds-dropdown__item
+							a(href='setupapp/global')
+								p.slds-trucate
+									span.slds-icon__container
+										include ../../dist/img/setupmenu_dev.svg
+									span.GlobalNav__dropdown-item-label Developer Console

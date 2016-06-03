@@ -1,5 +1,26 @@
 @import "salesforce-lightning-design-system/scss/index.scss";
 
+::-webkit-input-placeholder {
+   color: #54698d;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #54698d;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #54698d;  
+}
+
+:-ms-input-placeholder {  
+   color: #54698d;  
+}
+
+#AppNav{
+	position: absolute;
+  top: 48px;
+}
+
 .GlobalNav__global-nav{
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .16);
   position: fixed;
@@ -24,6 +45,57 @@
     white-space: nowrap;
     padding-top: 6px;
     padding-bottom: 6px;
+}
+
+.GlobalNav__global-identity li {
+    display: inline-block;
+}
+
+.GlobalNav__global-identity-item {
+    white-space: normal;
+}
+
+.GlobalNav__dropdown-menu-trigger {
+    position: relative;
+    display: inline-block;
+
+    #SetupDropdown.slds-dropdown--right {
+	    transform: translateX(23px);
+    }
+}
+
+.GlobalNav__logo, .GlobalNav__avatar-menu__icon {
+    height: 28px;
+}
+
+.GlobalNav__global-identity li .slds-dropdown__item {
+    margin-left: 0;
+}
+
+.GlobalNav .slds-dropdown__item {
+    width: 100%;
+}
+
+.GlobalNav__global-identity li {
+    display: inline-block;
+}
+
+.GlobalNav__dropdown-item-label {
+    position: relative;
+    left: -0.25rem;
+    transform: scale(0.7);
+}
+
+.GlobalNav__global-identity li .slds-icon__container {
+    padding-right: 10px;
+}
+
+.hidden{
+	display: none;
+}
+
+.invisible{
+	visibility: hidden;
 }
 
 .LogoAnimated--clipped {

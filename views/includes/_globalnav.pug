@@ -1,0 +1,59 @@
+include ../layout
+
+div.GlobalNav
+	div.GlobalNav__global-nav
+		div.slds-grid
+			div.GlobalNav__global-header.slds-col.slds-size--1-of-4
+				div.LogoAnimated.LogoAnimated--clipped.LogoAnimated--animated
+					img(src="img/cloudlogo.png" class="LogoAnimated__logo")
+					img(src="img/cloudlogo_words.svg" class="LogoAnimated__logo-words")
+			div.GlobalNav__search-bar-container
+				div.XObjSearch
+					div.XObjSearch__global-search-bar.slds-col
+						input(id='XObjSearch__search-bar' type='text' class='slds-input' placeholder='Search Salesforce')
+						div.XObjSearch__global-search-icon
+							span
+								include ../../dist/img/search.svg
+			ul#SetupMenu.GlobalNav__global-identity.slds-col.slds-size--1-of-4.slds-text-align--right.slds-p-horizontal--small
+				li.slds-p-right--small.GlobalNav__global-identity-item
+					span.GlobalNav__dropdown-menu-trigger
+						div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+							button.slds-button.slds-button--bare.GlobalNav__identity-button
+								span.slds-assistive-text Create
+								span
+									include ../../dist/img/create.svg
+							span
+				li.slds-p-right--small.GlobalNav__global-identity-item
+					span.GlobalNav__dropdown-menu-trigger
+						div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+							button.slds-button.slds-button--bare.GlobalNav__identity-button
+								span.slds-assistive-text Favorites
+								span
+									include ../../dist/img/favorite.svg
+							span
+				li.slds-p-right--small.GlobalNav__global-identity-item
+					span.GlobalNav__dropdown-menu-trigger
+						div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+							button.slds-button.slds-button--bare.GlobalNav__identity-button
+								span.slds-assistive-text Help	
+								span
+									include ../../dist/img/help.svg
+							span
+				//- SETUP GEAR MENU
+				include _setup_gearmenu.pug
+				li.slds-p-right--small.GlobalNav__global-identity-item
+					span.GlobalNav__dropdown-menu-trigger
+						div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+							button.slds-button.slds-button--bare.GlobalNav__identity-button
+								span.slds-assistive-text Notifications
+								span
+									include ../../dist/img/notification.svg
+							span
+				li.slds-p-right--small.GlobalNav__global-identity-item
+					span.GlobalNav__dropdown-menu-trigger
+						div(role='tooltip' class='drop-target.drop-element-attached-top.drop-element-attached-center.drop-target-attached-bottom.drop-target-attached-center')
+							button.slds-button.slds-button--bare.GlobalNav__identity-button
+								span.slds-assistive-text Profile
+								span
+									img(src='img/profile.png' class='slds-avatar slds-avatar--circle GlobalNav__avatar-menu__icon')
+							span

@@ -110,8 +110,24 @@ module.exports = function(grunt) {
     imagemin:{
       'dist/img/cloudlogo.png': 'src/img/cloudlogo.png',
       'dist/img/cloudlogo_words.svg': 'src/img/cloudlogo_words.svg',
-      'dist/img/search.svg': 'src/img/search.svg'
+      'dist/img/search.svg': 'src/img/search.svg',
+      'dist/img/create.svg': 'src/img/create.svg',
+      'dist/img/favorite.svg': 'src/img/favorite.svg',
+      'dist/img/help.svg': 'src/img/help.svg',
+      'dist/img/setup.png': 'src/img/setup.png',
+      'dist/img/notification.svg': 'src/img/notification.svg',
+      'dist/img/profile.png': 'src/img/profile.png',
+      'dist/img/setup_hover.png': 'src/img/setup_hover.png',
+      'dist/img/setupmenu_01.svg': 'src/img/setupmenu_01.svg',
+      'dist/img/setupmenu_02.svg': 'src/img/setupmenu_02.svg',
+      'dist/img/setupmenu_03.svg': 'src/img/setupmenu_03.svg',
+      'dist/img/setupmenu_04.svg': 'src/img/setupmenu_04.svg',
+      'dist/img/setupmenu_05.svg': 'src/img/setupmenu_05.svg',
+      'dist/img/appnav.svg': 'src/img/appnav.svg',
+      'dist/img/setupmenu_global.svg': 'src/img/setupmenu_global.svg',
+      'dist/img/setupmenu_dev.svg': 'src/img/setupmenu_dev.svg'
     },
+
 
     // When a new bower component is installed,
     //    1) copy script files (below)
