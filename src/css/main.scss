@@ -1,40 +1,42 @@
 @import "salesforce-lightning-design-system/scss/index.scss";
 
 ::-webkit-input-placeholder {
-   color: #54698d;
+	 color: #54698d;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #54698d;  
+	 color: #54698d;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #54698d;  
+	 color: #54698d;  
 }
 
 :-ms-input-placeholder {  
-   color: #54698d;  
+	 color: #54698d;  
 }
 
-#AppNav{
+.AppNav{
+	padding-left: 1.5em;
 	position: absolute;
-  top: 48px;
+	top: 48px;
+	width: 100%;
 }
 
 .GlobalNav__global-nav{
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .16);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 48px;
-  background-color: #fff;
-  z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background-color: #fff;
+	z-index: 10;
 }
 
 .GlobalNav__global-header{
-  padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .GlobalNav__search-bar-container {
@@ -42,52 +44,52 @@
 }
 
 .GlobalNav__global-identity {
-    white-space: nowrap;
-    padding-top: 6px;
-    padding-bottom: 6px;
+		white-space: nowrap;
+		padding-top: 6px;
+		padding-bottom: 6px;
 }
 
 .GlobalNav__global-identity li {
-    display: inline-block;
+		display: inline-block;
 }
 
 .GlobalNav__global-identity-item {
-    white-space: normal;
+		white-space: normal;
 }
 
 .GlobalNav__dropdown-menu-trigger {
-    position: relative;
-    display: inline-block;
+		position: relative;
+		display: inline-block;
 
-    #SetupDropdown.slds-dropdown--right {
-	    transform: translateX(23px);
-    }
+		#SetupDropdown.slds-dropdown--right {
+			transform: translateX(23px);
+		}
 }
 
 .GlobalNav__logo, .GlobalNav__avatar-menu__icon {
-    height: 28px;
+		height: 28px;
 }
 
 .GlobalNav__global-identity li .slds-dropdown__item {
-    margin-left: 0;
+		margin-left: 0;
 }
 
 .GlobalNav .slds-dropdown__item {
-    width: 100%;
+		width: 100%;
 }
 
 .GlobalNav__global-identity li {
-    display: inline-block;
+		display: inline-block;
 }
 
 .GlobalNav__dropdown-item-label {
-    position: relative;
-    left: -0.25rem;
-    transform: scale(0.7);
+		position: relative;
+		left: -0.25rem;
+		transform: scale(0.7);
 }
 
 .GlobalNav__global-identity li .slds-icon__container {
-    padding-right: 10px;
+		padding-right: 10px;
 }
 
 .hidden{
@@ -141,25 +143,228 @@
 	height: 28px;
 }
 
+.position-absolute{
+	position: absolute;
+}
+
+.position-relative{
+	position: relative;
+}
+
+.setup-home-smallCard{
+	border: 1px solid $color-border;
+	border-radius: $border-radius-medium;
+
+	.progress-wrapper{
+		border-bottom: 1px solid $color-border;
+
+		.progress-bar{
+			height: $spacing-small;
+
+			.progress-bar-bg{
+				background-color: $color-background-path-incomplete;
+				border-radius: $border-radius-pill;
+				height: $spacing-small;
+				width: 100%;
+			}
+
+			.progress-bar-progress{
+				background-color: $color-background-path-complete;
+				border-radius: $border-radius-pill;
+				height: $spacing-small;
+				width: 33%;
+			}
+		}	
+	}
+}
+
+
+.quick-find-search-bar {
+    padding: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.quick-find-search-bar .slds-input {
+    line-height: 16px;
+    padding-left: 32px;
+}
+
+.quick-find-search-icon {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    padding: 8px 1rem;
+}
+
+.Setup__app-nav {
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+		position: relative;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		position: fixed;
+		top: 48px;
+		left: 0;
+		width: 100%;
+		height: 36px;
+
+		transition: background-color 0.4s linear, top 0.2s ease-in-out;
+		z-index: 3;
+}
+
+.Setup__app-nav-list {
+	display: -ms-flexbox;
+	display: flex;
+	margin-left: 1rem;
+	white-space: nowrap;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.Setup__app-name {
+	margin-left: 6.5em;
+  border-left: 1px solid rgba(0,0,0,.16);
+  padding-left: 0em;
+}
+
+.Setup__app-link-control {
+		color: white;
+		text-transform: uppercase;
+		font-weight: 100 !important;
+		letter-spacing: 0.1rem;
+		display: block;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		white-space: nowrap;
+}
+
+.Setup__app-name__label {
+		color: #fff !important;
+		letter-spacing: 0;
+		white-space: nowrap;
+		margin-right: 1rem;
+		position: relative;
+		padding-left: .5rem;
+		padding-right: .5rem;
+		text-transform: none;
+}
+
+.Setup__app-switcher-control{
+	display: inline-block;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+
+	.slds-button--icon-bare {
+		color: #fff;
+	
+		.navEscape-label {
+			top: -2px;
+	    left: 24px;
+		}
+
+	}
+	svg{
+		height: 1em;
+		position: absolute;
+		top: -2px;
+		width: 1em; 
+	}
+}
+
+@media (min-width: 64em){
+	.site-content {
+	    // padding: 3rem 0 3rem 3rem;
+	}
+}
+
+.site-content {
+  // padding: 1.5rem;
+  .setup-home-stats{
+  	height: 400px;
+  }
+}
+
+@media (min-width: 48em) {
+		.site-navigation {
+				position: fixed;
+				top: 84px;
+				bottom: 0;
+				width: 16rem;
+				padding-top: .5rem;
+				overflow: hidden;
+				overflow-y: auto;
+		}
+}
+
+@media (min-width: 64em) {
+	.site-main {
+	    min-height: calc(100vh - 5rem);
+	}
+}
+
+@media (min-width: 48em){
+	.site-main {
+	    -ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+	    margin-left: 15rem;
+      margin-top: 6em;
+	    min-height: calc(100vh - 5.375rem);
+	}
+}
+
+
+#setup-tree{
+	a{
+		color: #16325c;
+	}
+
+	a:hover{
+		text-decoration: none;
+	}
+
+	li{
+		cursor: pointer;
+		padding: .5em 0 .5em 0;
+	}
+
+	li.parent ul{
+		padding-left: 1.5em;
+	}
+
+	// li:hover{
+	// 	background-color: #F4F6F9;
+	// }
+}
+
+.site-navigation {
+    background-color: white;
+    border-right: 1px solid #d8dde6;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+}
+
 .XObjSearch {
 	transition: all ease-out .4s;
 }
 
 .XObjSearch__global-search-bar {
-    position: relative;
-    display: inline-block;
+		position: relative;
+		display: inline-block;
 }
 
 .XObjSearch__global-search-bar .slds-input {
-    width: 438px;
-    line-height: 16px;
-    min-height: auto;
-    padding: 5px 32px 5px 48px;
+		width: 438px;
+		line-height: 16px;
+		min-height: auto;
+		padding: 5px 32px 5px 48px;
 }
 
 .XObjSearch__global-search-icon {
-    position: absolute;
-    top: -2px;
-    left: 0;
-    padding: 5px 1rem;
+		position: absolute;
+		top: -2px;
+		left: 0;
+		padding: 5px 1rem;
 }

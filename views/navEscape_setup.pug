@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	include ./includes/_globalnav.pug
+	include ./includes/_setupappnav.pug
+
+	div.slds-grid.main-content
+		nav#navigation.site-navigation
+			div.quick-find-search-bar
+				input(id='quick-find' type='text' class='slds-input' placeholder='Quick Find')
+				div.quick-find-search-icon
+					include ../dist/img/search.svg
+			include ./includes/_setuptree.pug
+		main(class='site-main setup-padding-top' role='main')
+			div.site-content.slds-p-left--x-large.slds-p-top--medium.slds-p-right--medium.site-landing-page
+				div.slds-grid
+					div.setup-home-stats.slds-col.slds-box
+						p Stats go here
+				div.slds-grid
+					div.setup-home-mru.slds-box.slds-size--8-of-12.slds-m-top--medium.slds-m-right--medium
+						p MRU goes here
+					div.slds-size--4-of-12.slds-m-top--medium
+						include ./includes/_setupassistant_smallcard.pug

@@ -4,7 +4,7 @@ li#SetupGear__menu-item.slds-p-right--small.GlobalNav__global-identity-item
 			button.slds-button.slds-button--bare.GlobalNav__identity-button
 				span.slds-assistive-text Setup
 				span#SetupGear__icon
-					img(src='img/setup.png')
+					img(src='../../dist/img/setup.png')
 			span
 		div#SetupDropdown.slds-dropdown.slds-dropdown--right.slds-dropdown--menu.slds-nubbin--top-right
 			div#SetupAppMenu.slds-text-align--left
@@ -16,27 +16,19 @@ li#SetupGear__menu-item.slds-p-right--small.GlobalNav__global-identity-item
 					ul(role='menu' class='slds-dropdown__list')
 						//- Setup App 1
 						li.slds-dropdown__item
-							a(href='setupapp/01')
+							a(href='/navEscape/close/setup')
 								p.slds-trucate
 									span.slds-icon__container
 										include ../../dist/img/setupmenu_01.svg
-									span.GlobalNav__dropdown-item-label Service Desk Setup
+									span.GlobalNav__dropdown-item-label x Close
 
 						//- Setup App 2
 						li.slds-dropdown__item
-							a(href='setupapp/01')
+							a(href='/navEscape/back/setup')
 								p.slds-trucate
 									span.slds-icon__container
 										include ../../dist/img/setupmenu_02.svg
-									span.GlobalNav__dropdown-item-label Inside Sales Desk Setup
-
-						//- Setup App 3
-						li.slds-dropdown__item
-							a(href='setupapp/01')
-								p.slds-trucate
-									span.slds-icon__container
-										include ../../dist/img/setupmenu_03.svg
-									span.GlobalNav__dropdown-item-label My Money App Setup
+									span.GlobalNav__dropdown-item-label <-- Back
 
 			//- GLOBAL SETUP MENU
 			div#SetupGlobalMenu.slds-text-align--left
@@ -48,7 +40,7 @@ li#SetupGear__menu-item.slds-p-right--small.GlobalNav__global-identity-item
 					ul(role='menu' class='slds-dropdown__list')
 						//- Setup App 1
 						li.slds-dropdown__item
-							a(href='setupapp/global')
+							a(href='setupapp_global')
 								p.slds-trucate
 									span.slds-icon__container
 										include ../../dist/img/setupmenu_global.svg
@@ -56,7 +48,7 @@ li#SetupGear__menu-item.slds-p-right--small.GlobalNav__global-identity-item
 
 						//- Setup App 2
 						li.slds-dropdown__item
-							a(href='setupapp/global')
+							a(href='setupapp_global')
 								p.slds-trucate
 									span.slds-icon__container
 										include ../../dist/img/setupmenu_dev.svg

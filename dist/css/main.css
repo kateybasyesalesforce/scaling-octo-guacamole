@@ -9618,9 +9618,11 @@ a.slds-button--inverse:focus {
   color: #54698d;
 }
 
-#AppNav {
+.AppNav {
+  padding-left: 1.5em;
   position: absolute;
   top: 48px;
+  width: 100%;
 }
 
 .GlobalNav__global-nav {
@@ -9740,6 +9742,178 @@ a.slds-button--inverse:focus {
   left: 46px;
   top: 14px;
   height: 28px;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.setup-home-smallCard {
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+}
+.setup-home-smallCard .progress-wrapper {
+  border-bottom: 1px solid #d8dde6;
+}
+.setup-home-smallCard .progress-wrapper .progress-bar {
+  height: 0.75rem;
+}
+.setup-home-smallCard .progress-wrapper .progress-bar .progress-bar-bg {
+  background-color: #e0e5ee;
+  border-radius: 15rem;
+  height: 0.75rem;
+  width: 100%;
+}
+.setup-home-smallCard .progress-wrapper .progress-bar .progress-bar-progress {
+  background-color: #4bca81;
+  border-radius: 15rem;
+  height: 0.75rem;
+  width: 33%;
+}
+
+.quick-find-search-bar {
+  padding: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.quick-find-search-bar .slds-input {
+  line-height: 16px;
+  padding-left: 32px;
+}
+
+.quick-find-search-icon {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  padding: 8px 1rem;
+}
+
+.Setup__app-nav {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  transition: background-color 0.4s linear, top 0.2s ease-in-out;
+  z-index: 3;
+}
+
+.Setup__app-nav-list {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  white-space: nowrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.Setup__app-name {
+  margin-left: 6.5em;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  padding-left: 0em;
+}
+
+.Setup__app-link-control {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100 !important;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.Setup__app-name__label {
+  color: #fff !important;
+  letter-spacing: 0;
+  white-space: nowrap;
+  margin-right: 1rem;
+  position: relative;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-transform: none;
+}
+
+.Setup__app-switcher-control {
+  display: inline-block;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.Setup__app-switcher-control .slds-button--icon-bare {
+  color: #fff;
+}
+.Setup__app-switcher-control .slds-button--icon-bare .navEscape-label {
+  top: -2px;
+  left: 24px;
+}
+.Setup__app-switcher-control svg {
+  height: 1em;
+  position: absolute;
+  top: -2px;
+  width: 1em;
+}
+
+.site-content .setup-home-stats {
+  height: 400px;
+}
+
+@media (min-width: 48em) {
+  .site-navigation {
+    position: fixed;
+    top: 84px;
+    bottom: 0;
+    width: 16rem;
+    padding-top: .5rem;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+@media (min-width: 64em) {
+  .site-main {
+    min-height: calc(100vh - 5rem);
+  }
+}
+@media (min-width: 48em) {
+  .site-main {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-left: 15rem;
+    margin-top: 6em;
+    min-height: calc(100vh - 5.375rem);
+  }
+}
+#setup-tree a {
+  color: #16325c;
+}
+#setup-tree a:hover {
+  text-decoration: none;
+}
+#setup-tree li {
+  cursor: pointer;
+  padding: .5em 0 .5em 0;
+}
+#setup-tree li.parent ul {
+  padding-left: 1.5em;
+}
+
+.site-navigation {
+  background-color: white;
+  border-right: 1px solid #d8dde6;
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
 }
 
 .XObjSearch {

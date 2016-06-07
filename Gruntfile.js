@@ -80,6 +80,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
+          'dist/js/tree.min.js': 'src/js/tree.js',
           'dist/js/main.min.js': 'src/js/main.js'
         }
       }
@@ -125,7 +126,11 @@ module.exports = function(grunt) {
       'dist/img/setupmenu_05.svg': 'src/img/setupmenu_05.svg',
       'dist/img/appnav.svg': 'src/img/appnav.svg',
       'dist/img/setupmenu_global.svg': 'src/img/setupmenu_global.svg',
-      'dist/img/setupmenu_dev.svg': 'src/img/setupmenu_dev.svg'
+      'dist/img/setupmenu_dev.svg': 'src/img/setupmenu_dev.svg',
+      'dist/img/close.svg': 'src/img/close.svg',
+      'dist/img/chevron_right.svg': 'src/img/chevron_right.svg',
+      'dist/img/setup-home-stats.png': 'src/img/setup-home-stats.png',
+      'dist/img/back.svg': 'src/img/back.svg'
     },
 
 

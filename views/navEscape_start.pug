@@ -2,5 +2,5 @@ extends layout
 
 block content
 	include ./includes/_globalnav.pug
-	div#AppNav
+	div(class='AppNav' style='background-color:' + nav_type.color)
 		include ../dist/img/appnav.svg

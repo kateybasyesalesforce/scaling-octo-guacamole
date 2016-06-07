@@ -1,10 +1,17 @@
 extends layout
 
 block content
-	div.slds-grid.slds-grid--align-center
+	div.slds-grid.slds-grid--align-center.slds-m-top--large
 		div.slds-size--6-of-12
 			div.slds-box
 				h1.slds-text-heading--large.slds-m-bottom--large #{title}
-				ul
+				ol.slds-list--ordered
 					li
-						a(href='/proto') Proto
+						h2.slds-text-heading--small.slds-m-bottom--medium How do I get back to the app from Setup Apps?
+						ul
+							li
+								a(href='/navEscape/close' style='background-color:' + navEscape.close.color)
+									img(src='dist/img/appnav.svg')
+							li
+								a(href='/navEscape/close' style='background-color:' + navEscape.back.color)
+									img(src='dist/img/appnav.svg')
