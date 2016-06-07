@@ -6,6 +6,10 @@ block content
 
 	div.slds-grid.main-content
 		nav#navigation.site-navigation
+			if nav_type[type].label == 'layerCake'
+				h1.slds-p-left--medium.slds-p-top--x-small.slds-text-heading--small
+					include ../dist/img/layercake_gear.svg
+					span.display-inline-block.slds-m-left--medium.slds-p-top--xx-small Service Desk Setup
 			div.quick-find-search-bar
 				input(id='quick-find' type='text' class='slds-input' placeholder='Quick Find')
 				div.quick-find-search-icon

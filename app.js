@@ -39,6 +39,10 @@ var navEscape = {
       icon: 'back',
       label: 'Back',
       appName: 'Sales Desk'
+  },
+  layerCake: {
+    color: '#45C173',
+    label: 'layerCake'
   }
 }
 
@@ -57,7 +61,8 @@ app.get('/navEscape/:type/setup', function (req, res) {
 
   res.render('navEscape_setup', {
     title: title,
-    nav_type: navEscape[type],
+    nav_type: navEscape,
+    type: type,
     fs: require('fs')
   });
 });

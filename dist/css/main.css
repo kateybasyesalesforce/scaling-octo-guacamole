@@ -9625,6 +9625,10 @@ a.slds-button--inverse:focus {
   width: 100%;
 }
 
+.display-inline-block {
+  display: inline-block;
+}
+
 .GlobalNav__global-nav {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
   position: fixed;
@@ -9779,6 +9783,7 @@ a.slds-button--inverse:focus {
   padding: 1rem;
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .quick-find-search-bar .slds-input {
@@ -9912,7 +9917,6 @@ a.slds-button--inverse:focus {
 .site-navigation {
   background-color: white;
   border-right: 1px solid #d8dde6;
-  padding-top: .5rem;
   padding-bottom: 1.5rem;
 }
 
