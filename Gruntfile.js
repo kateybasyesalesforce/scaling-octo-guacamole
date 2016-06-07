@@ -131,7 +131,8 @@ module.exports = function(grunt) {
       'dist/img/chevron_right.svg': 'src/img/chevron_right.svg',
       'dist/img/setup-home-stats.png': 'src/img/setup-home-stats.png',
       'dist/img/back.svg': 'src/img/back.svg',
-      'dist/img/layercake_gear.svg': 'src/img/layercake_gear.svg'
+      'dist/img/layercake_gear.svg': 'src/img/layercake_gear.svg',
+      'dist/img/chevron_down.svg': 'src/img/chevron_down.svg'
     },
 
 

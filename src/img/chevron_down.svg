@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Workspaces" transform="translate(-972.000000, -76.000000)" fill="#9FAAB5">
+            <g id="chevron_right" transform="translate(978.000000, 80.000000) rotate(90.000000) translate(-978.000000, -80.000000) translate(974.000000, 74.000000)">
+                <g id="Shape">
+                    <path d="M1.322,0.102 L6.964,5.69 C7.12765261,5.85652228 7.12765261,6.12347772 6.964,6.29 L1.322,11.877 C1.15547772,12.0406526 0.88852228,12.0406526 0.722,11.877 L0.122,11.277 C-0.040998501,11.1105994 -0.040998501,10.8444006 0.122,10.678 L4.567,6.29 C4.73065261,6.12347772 4.73065261,5.85652228 4.567,5.69 L0.15,1.302 C-0.0136526074,1.13547772 -0.0136526074,0.86852228 0.15,0.702 L0.75,0.102 C0.916420353,-0.0339847622 1.15557965,-0.0339847622 1.322,0.102 L1.322,0.102 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

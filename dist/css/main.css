@@ -9625,6 +9625,10 @@ a.slds-button--inverse:focus {
   width: 100%;
 }
 
+body {
+  background-color: #f4f6f9;
+}
+
 .display-inline-block {
   display: inline-block;
 }
@@ -9757,6 +9761,7 @@ a.slds-button--inverse:focus {
 }
 
 .setup-home-smallCard {
+  background-color: white;
   border: 1px solid #d8dde6;
   border-radius: 0.25rem;
 }
@@ -9913,11 +9918,27 @@ a.slds-button--inverse:focus {
 #setup-tree li.parent ul {
   padding-left: 1.5em;
 }
+#setup-tree li #setup-tree-icon-container img {
+  -ms-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+#setup-tree li.closed #setup-tree-icon-container img {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
 
 .site-navigation {
   background-color: white;
   border-right: 1px solid #d8dde6;
   padding-bottom: 1.5rem;
+}
+
+.slds-box {
+  background-color: white;
 }
 
 .XObjSearch {

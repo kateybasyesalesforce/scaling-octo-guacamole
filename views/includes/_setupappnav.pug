@@ -13,7 +13,7 @@ if nav_type[type].label == 'Back' || nav_type[type].label == 'Close'
 							span.navEscape-label.position-absolute= nav_type[type].label
 							title
 					li.Setup__app-name
-						a(href='/navEscape/#{nav_type.icon}/setup' class='slds-button Setup__app-link-control')
+						a(href='/navEscape/' + nav_type[type].icon + '/setup' class='slds-button Setup__app-link-control')
 							h1.Setup__app-name__label.slds-text-body--regular= nav_type[type].appName + ' Setup'
 else
 	div(class='AppNav' style='background-color:' + nav_type.layerCake.color)
